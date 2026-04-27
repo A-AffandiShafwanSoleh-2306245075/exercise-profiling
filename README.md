@@ -39,7 +39,7 @@ Konfigurasi ini mensimulasikan kondisi di mana 10 pengguna mengakses sistem hamp
 
 ### Summary Report
 
-![Summary Report](assets/readme1.1.png)
+![Summary Report](src/main/resources/assets/readme1.1.png)
 
 Summary Report memberikan gambaran statistik keseluruhan dari hasil pengujian. Dari data yang diperoleh:
 - Endpoint `/all-student` memiliki rata-rata waktu respons **paling tinggi** dibandingkan endpoint lainnya, mengindikasikan bottleneck utama sistem.
@@ -50,7 +50,7 @@ Summary Report memberikan gambaran statistik keseluruhan dari hasil pengujian. D
 
 ### View Results Tree
 
-![View Results Tree](assets/readme1.2.png)
+![View Results Tree](src/main/resources/assets/readme1.2.png)
 
 Pada tampilan View Results Tree, dapat dilihat bahwa:
 - Sebagian besar request berhasil dieksekusi dengan status **200 (OK)** ✅ (ditandai warna hijau).
@@ -62,7 +62,7 @@ Kegagalan di awal ini kemungkinan besar disebabkan oleh kondisi awal server yang
 
 ### View Results in Table
 
-![View Results Table](assets/readme1.3.png)
+![View Results Table](src/main/resources/assets/readme1.3.png)
 
 Dari tampilan tabel hasil pengujian, terlihat perbedaan waktu respons yang sangat signifikan antar endpoint:
 
@@ -74,7 +74,7 @@ Dari tampilan tabel hasil pengujian, terlihat perbedaan waktu respons yang sanga
 
 ### Graph Results
 
-![Graph Results](assets/readme1.4.png)
+![Graph Results](src/main/resources/assets/readme1.4.png)
 
 Grafik hasil pengujian menunjukkan:
 - Adanya **fluktuasi yang cukup besar** pada waktu respons, terutama pada endpoint `/all-student`.
@@ -93,7 +93,7 @@ jmeter -n -t "Test Plan.jmx" -l test_result_log.jtl
 
 ### Hasil CLI
 
-![CLI Output](assets/readme1.5.png)
+![CLI Output](src/main/resources/assets/readme1.5.png)
 
 Pada mode CLI, hasil yang diperoleh sangat berbeda dibandingkan GUI. **Semua request menghasilkan status 500 (Internal Server Error)** dengan waktu respons sekitar 30 detik.
 
@@ -101,7 +101,7 @@ Pada mode CLI, hasil yang diperoleh sangat berbeda dibandingkan GUI. **Semua req
 
 ### File Log (.jtl)
 
-![JTL Result](assets/readme1.6.png)
+![JTL Result](src/main/resources/assets/readme1.6.png)
 
 Dari file log, terlihat bahwa **seluruh endpoint gagal diproses**. Perbedaan hasil antara GUI dan CLI terjadi karena:
 
