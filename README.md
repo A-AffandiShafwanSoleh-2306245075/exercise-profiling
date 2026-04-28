@@ -11,10 +11,10 @@ Tujuan utama dari pengujian ini adalah untuk memahami bagaimana sistem bereaksi 
 ## Endpoint yang Diuji
 
 | Endpoint | Deskripsi | Estimasi Beban |
-|----------|-----------|----------------|
-| `/all-student` | Mengambil **seluruh** data mahasiswa beserta relasinya (JOIN antar tabel) | ⚠️ Berat |
-| `/all-student-name` | Hanya mengambil **nama** mahasiswa tanpa data tambahan | ✅ Ringan |
-| `/highest-gpa` | Mencari mahasiswa dengan **GPA tertinggi** (operasi agregasi sederhana) | ✅ Sangat Ringan |
+|----------|-----------|-------------|
+| `/all-student` | Mengambil **seluruh** data mahasiswa beserta relasinya (JOIN antar tabel) |  Berat |
+| `/all-student-name` | Hanya mengambil **nama** mahasiswa tanpa data tambahan |  Ringan |
+| `/highest-gpa` | Mencari mahasiswa dengan **GPA tertinggi** (operasi agregasi sederhana) |  Sangat Ringan |
 
 ---
 
